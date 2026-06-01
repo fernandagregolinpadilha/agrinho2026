@@ -1,14 +1,14 @@
-# 🌸 Ateliê dos Sonhos | Acessibilidade & Criatividade
+# 🌸 Jardim dos Sonhos | Acessibilidade e Criatividade
 
-Uma landing page simples e feminina sobre sonhos, criatividade e organização pessoal.
-
-O projeto foi desenvolvido com foco em HTML semântico, identidade visual, responsividade, acessibilidade e interatividade com JavaScript.
+Uma landing page inspirada em sonhos, criatividade e desenvolvimento pessoal. O projeto combina um visual delicado em tons de rosa com recursos básicos de acessibilidade para tornar a navegação mais agradável e inclusiva.
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-Criar uma página autoral, bonita e acessível, mostrando como pequenos projetos Front-End podem ter identidade visual, organização e recursos úteis para diferentes usuários.
+Demonstrar a criação de uma página web autoral utilizando HTML, CSS e JavaScript, aplicando conceitos de acessibilidade, responsividade e identidade visual.
+
+O projeto busca transmitir uma mensagem positiva sobre crescimento pessoal, organização e confiança para alcançar objetivos.
 
 ---
 
