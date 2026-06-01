@@ -1,77 +1,49 @@
 :root {
-    --pink-dark: #3b0a24;
-    --pink-main: #b0005a;
-    --pink-light: #fff5fa;
-    --pink-soft: #f8a5c2;
-    --text-main: #1a1a1a;
-    --font-size-base: 16px;
-}
-
-.dark-mode {
-    --pink-light: #121212;
-    --text-main: #f7fafc;
-    --pink-main: #ff8cc6;
-    --pink-dark: #ffffff;
+    --agro-green-dark: #4a1230;
+    --agro-gold-safe: #b91c5c;
 }
 
 body {
-    background-color: var(--pink-light);
-    color: var(--text-main);
     font-family: 'Inter', sans-serif;
-    font-size: var(--font-size-base);
-    overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
+    background-color: #fff5fa;
+    color: #1a1a1a;
 }
 
 h1,
 h2,
+h3,
 .serif {
     font-family: 'Playfair Display', serif;
-    color: var(--pink-dark);
 }
 
-.text-pink-main {
-    color: var(--pink-main);
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
+.text-agro-gold {
+    color: var(--agro-gold-safe);
 }
 
 .hero-gradient {
-    background: linear-gradient(rgba(59, 10, 36, 0.75), rgba(59, 10, 36, 0.90)),
-        url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&q=80&w=2000');
+    background: linear-gradient(rgba(74, 18, 48, 0.72), rgba(74, 18, 48, 0.88)),
+        url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=1600');
     background-size: cover;
     background-position: center;
 }
 
-/* Menu de Acessibilidade */
+/* Acessibilidade: Painel */
 .accessibility-menu {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 .acc-button {
-    background: var(--pink-main);
+    background: var(--agro-green-dark);
     color: white;
-    width: 50px;
-    height: 50px;
+    padding: 12px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .acc-panel {
@@ -79,19 +51,13 @@ h2,
     top: 60px;
     right: 0;
     background: white;
-    color: #1a202c;
+    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    display: none;
     width: 250px;
-    border: 1px solid #ddd;
-}
-
-.dark-mode .acc-panel {
-    background: #1e1e1e;
-    color: white;
-    border-color: #333;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: #1a202c;
 }
 
 .acc-panel.show {
@@ -100,18 +66,30 @@ h2,
 
 .acc-option {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .btn-small {
-    background: #edf2f7;
-    border: none;
+    background: #fce7f3;
+    color: #4a1230;
     padding: 6px 12px;
     border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f7fafc;
+}
+
+.dark-mode .acc-panel {
+    background: #1e1e1e;
+    color: white;
+    border-color: #333;
 }
 
 .dark-mode .btn-small {
@@ -123,16 +101,38 @@ h2,
     background-color: #1a1a1a !important;
 }
 
+.dark-mode .bg-gray-50 {
+    background-color: #242424 !important;
+}
+
 .dark-mode .text-gray-600,
 .dark-mode .text-gray-700 {
     color: #cbd5e0 !important;
 }
 
-.dark-mode .text-pink-main {
+.dark-mode .text-agro-gold {
     color: #ff8cc6;
 }
 
+.dark-mode h2,
+.dark-mode h3 {
+    color: #ffffff;
+}
+
+/* Animações Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Destaque na Leitura */
 .reading-active {
-    outline: 3px solid var(--pink-main);
-    background: rgba(176, 0, 90, 0.1);
+    outline: 3px solid var(--agro-gold-safe);
+    background: rgba(185, 28, 92, 0.12);
 }
