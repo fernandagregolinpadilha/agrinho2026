@@ -1,14 +1,12 @@
-# 🌸 Jardim dos Sonhos | Acessibilidade e Criatividade
+# 🌸 Jardim dos Sonhos | Acessibilidade & Criatividade
 
-Uma landing page inspirada em sonhos, criatividade e desenvolvimento pessoal. O projeto combina um visual delicado em tons de rosa com recursos básicos de acessibilidade para tornar a navegação mais agradável e inclusiva.
+Uma landing page que explora a importância dos sonhos, da organização e do crescimento pessoal. O projeto une um design delicado em tons de rosa com recursos simples de inclusão digital.
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-Demonstrar a criação de uma página web autoral utilizando HTML, CSS e JavaScript, aplicando conceitos de acessibilidade, responsividade e identidade visual.
-
-O projeto busca transmitir uma mensagem positiva sobre crescimento pessoal, organização e confiança para alcançar objetivos.
+Demonstrar como a tecnologia pode ser usada para criar uma página autoral, bonita e acessível, aplicando conceitos de identidade visual, responsividade e acessibilidade no desenvolvimento Front-End.
 
 ---
 
@@ -16,34 +14,37 @@ O projeto busca transmitir uma mensagem positiva sobre crescimento pessoal, orga
 
 ### ♿ Hub de Acessibilidade
 
-O site possui um menu de acessibilidade com:
+O projeto conta com um painel de controle simples que permite:
 
-- Aumentar e diminuir fonte
-- Modo escuro
-- Leitura de voz do conteúdo
+* **Dark Mode Nativo:** Troca de cores da página para melhorar o conforto visual.
+* **Painel Interativo:** Menu de acessibilidade que pode ser aberto e fechado pelo usuário.
+* **Fechamento Automático:** O painel é fechado ao clicar fora dele, melhorando a experiência de navegação.
 
-### 🎨 Design
+### 🎨 UI/UX & Design
 
-- Cores em tons de rosa
-- Layout responsivo
-- Cards organizados
-- Animações suaves ao rolar a página
+* **Design Responsivo:** Adaptável para dispositivos móveis e desktop via Tailwind CSS.
+* **Scroll Animations:** Efeito de revelação de elementos utilizando `Intersection Observer`.
+* **Estilo Editorial:** Uso de tipografia serifada (*Playfair Display*) para títulos e sans-serif (*Inter*) para corpo de texto.
+* **Identidade Visual:** Paleta em tons de rosa, transmitindo delicadeza, criatividade e personalidade.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Tailwind CSS
-- Google Fonts
+* **Estrutura:** HTML5 Semântico.
+* **Estilização:** Tailwind CSS via CDN e CSS personalizado.
+* **Tipografia:** Google Fonts.
+* **Interatividade:** JavaScript Vanilla.
+* **Imagens:** Unsplash.
 
 ---
 
-## 📂 Estrutura
+## 📂 Estrutura de Arquivos
 
 ```text
 /
-├── index.html
-└── README.md
+├── index.html          # Estrutura principal da página
+├── style.css           # Estilos personalizados do projeto
+├── script.js           # Interatividade e animações
+└── README.md           # Documentação do projeto
+```
