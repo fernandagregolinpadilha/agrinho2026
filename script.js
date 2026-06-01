@@ -1,6 +1,7 @@
 // Acessibilidade: Painel
 function abrirMenu() {
-    document.getElementById('accPanel').classList.toggle('show');
+    const panel = document.getElementById('accPanel');
+    panel.classList.toggle('show');
 }
 
 function toggleDarkMode() {
